@@ -16,9 +16,9 @@ module.exports = {
         
         if (interaction.isCommand && interaction.isCommand()) {
      
-            const BOT_ICON = "https://cdn.discordapp.com/emojis/1334648756649590805.png";
+            const BOT_ICON = "https://share.creavite.co/6871eeaf6ef661363b0f94b9.png";
             const EMBED_COLOR = "#5865F2"; 
-            const FOOTER_TEXT = "All In One | The Discord Operating System • Created by GlaceYT";
+            const FOOTER_TEXT = "Chill Paradise | The Discord Operating System • Crated by Danyar";
             const COMMANDS_DIR = path.join(__dirname, '../../commands');
             const EXCESS_COMMANDS_DIR = path.join(__dirname, '../../excesscommands');
 
@@ -117,14 +117,13 @@ module.exports = {
 
                 
                 pages.push({
-                    title: '✨ ALL IN ONE BOT',
+                    title: '✨ Chill Paradise',
                     description: [
                         '### THE DISCORD OPERATING SYSTEM',
                         '',
                         '> The ultimate Discord bot for all your server needs',
                         '',
                         '**BOT STATISTICS**',
-                        `\`🧠\` **Version:** 1.2.2`,
                         `\`🛠️\` **Total Commands:** ${totalCount}`,
                         `\`⚙️\` **Commands Loaded:** ${totalCommandsLoaded}`,
                         `\`📌\` **Master Commands:** ${masterCount}`,
@@ -132,7 +131,7 @@ module.exports = {
                         `\`💻\` **Prefix Commands:** ${Object.values(config.excessCommands).some(v => v) ? '`Enabled`' : '`Disabled`'}`,
                         '',
                     ].join('\n'),
-                    author: { name: 'ALL IN ONE BOT • COMMAND CENTER' },
+                    author: { name: 'Chill Paradise • COMMAND CENTER' },
                     icon: '📚'
                 });
 
@@ -202,7 +201,7 @@ module.exports = {
                     .setAuthor({
                         name: page.author.name,
                         iconURL: BOT_ICON,
-                        url: "https://discord.gg/xQF9f9yUEM"
+                        url: "https://discord.gg/rfJHJ58jAA"
                     })
                     .setImage(helpBanner)
                     .setFooter({ text: `${FOOTER_TEXT} • Page ${currentPage + 1}/${currentSet.length}` })
